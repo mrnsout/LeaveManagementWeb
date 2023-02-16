@@ -1,0 +1,8 @@
+﻿https://datatables.net/
+
+font awesome:
+
+https://fontawesome.com/
+
+https://getbootstrap.com/docs/5.3/extend/icons/#bootstrap-icons then hit Alternatives and get
+https://fontawesome.com/
