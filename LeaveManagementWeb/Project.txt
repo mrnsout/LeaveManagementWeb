@@ -6,3 +6,16 @@ https://fontawesome.com/
 
 https://getbootstrap.com/docs/5.3/extend/icons/#bootstrap-icons then hit Alternatives and get
 https://fontawesome.com/
+
+InvalidOperationException: The source IQueryable doesn't implement 
+IDbAsyncEnumerable<LeaveManagementWeb.Data.LeaveType>. Only sources that implement
+IDbAsyncEnumerable can be used for Entity Framework asynchronous operations
+For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+
+The source IQueryable doesn't implement 
+IDbAsyncEnumerable
+Response:
+The error message is from EF6. It's because I'm referencing both EF6 and EF Core,
+so I removed: System.Data.Entity;
+(EF6) in my code, but only using Microsoft.EntityFrameworkCore; (EF Core).
+=======
