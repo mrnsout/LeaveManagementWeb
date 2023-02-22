@@ -5,9 +5,12 @@ using AutoMapper;
 using LeaveManagementWeb.Models;
 using LeaveManagementWeb.Repositories;
 using LeaveManagementWeb.Contracts;
+using Microsoft.AspNetCore.Authorization;
+using LeaveManagementWeb.Constants;
 
 namespace LeaveManagementWeb.Controllers
 {
+    [Authorize(Roles =Roles.Administrator)]
     public class LeaveTypesController : Controller
     {
        private readonly ILeaveTypeRepository leaveTypeRepository;
@@ -65,7 +68,7 @@ namespace LeaveManagementWeb.Controllers
             }
             return View(leaveTypeVM);
         }
-
+       
         // GET: LeaveTypes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

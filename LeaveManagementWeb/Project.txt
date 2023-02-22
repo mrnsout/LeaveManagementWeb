@@ -19,3 +19,4 @@ The error message is from EF6. It's because I'm referencing both EF6 and EF Core
 so I removed: System.Data.Entity;
 (EF6) in my code, but only using Microsoft.EntityFrameworkCore; (EF Core).
 =======
+login: user test@admin  password @Murka1
