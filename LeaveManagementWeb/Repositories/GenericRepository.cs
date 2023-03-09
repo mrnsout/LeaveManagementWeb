@@ -2,7 +2,7 @@
 using LeaveManagementWeb.Data;
 using LeaveManagementWeb.Models;
 using Microsoft.EntityFrameworkCore;
-//using System.Data.Entity;
+
 
 namespace LeaveManagementWeb.Repositories
 {
@@ -18,6 +18,13 @@ namespace LeaveManagementWeb.Repositories
             await context.AddAsync(entity);
             await context.SaveChangesAsync();
             return entity;
+        }
+
+        public async Task AddRangeAsync(List<T> entities)
+        {
+            await context.AddRangeAsync(entities);
+            await context.SaveChangesAsync();
+           
         }
 
         public async Task DeleteAsync(int id)
