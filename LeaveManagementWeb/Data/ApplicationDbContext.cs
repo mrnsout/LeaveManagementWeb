@@ -23,8 +23,8 @@ namespace LeaveManagementWeb.Data
         public DbSet<LeaveType> LeaveTypes { get; set; }
 
         public DbSet<LeaveAllocation> LeaveAllocations { get; set; }
-
-        public DbSet<LeaveManagementWeb.Models.LeaveAllocationEditVM> LeaveAllocationEditVM { get; set; }
+        public DbSet<LeaveRequest> LeaveRequests { get; set; }  
+       // public DbSet<LeaveManagementWeb.Models.LeaveAllocationEditVM> LeaveAllocationEditVM { get; set; }
         //It was scaffolded. We do not need this. Delete it!
         //public DbSet<LeaveManagementWeb.Models.EmployeeListVM> EmployeeListVM { get; set; }
        // public DbSet<LeaveManagementWeb.Models.EmployeeAllocationVM> EmployeeAllocationVM { get; set; }
