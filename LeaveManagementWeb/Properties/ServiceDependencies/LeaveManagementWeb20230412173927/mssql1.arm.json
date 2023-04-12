@@ -51,7 +51,7 @@
             {
               "kind": "v12.0",
               "location": "[parameters('resourceLocation')]",
-              "name": "leavemanagementnet6dbserver3",
+              "name": "leavemanagementnet6dbserver7",
               "type": "Microsoft.Sql/servers",
               "apiVersion": "2017-10-01-preview"
             },
@@ -63,11 +63,11 @@
               },
               "kind": "v12.0,user",
               "location": "[parameters('resourceLocation')]",
-              "name": "leavemanagementnet6dbserver3/LeaveManagementNet6",
+              "name": "leavemanagementnet6dbserver7/LeaveManagementNet6",
               "type": "Microsoft.Sql/servers/databases",
               "apiVersion": "2017-10-01-preview",
               "dependsOn": [
-                "leavemanagementnet6dbserver3"
+                "leavemanagementnet6dbserver7"
               ]
             }
           ]
